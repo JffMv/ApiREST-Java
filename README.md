@@ -73,8 +73,25 @@ mvn javadoc:test-aggregate
 mvn javadoc:test-aggregate-jar
 ```
 
+## Architecture
 
+This project is based on a REST API architecture where it consumes a service from the URL https://www.alphavantage.co/. The service sends a JSON file containing company data.
 
+It's worth noting that a JavaScript client is created to consume the REST service created in Java, which in turn consumes the API. Additionally, there is a concurrent client from the `Concurrent` class in Java that consumes the REST service as depicted in the following image.
+![img_2.png](img_2.png)
+
+The following image shows the deployed service being consumed from AWS at the link:
+http://ec2-54-166-147-53.compute-1.amazonaws.com:8080/formulario.html
+It may not be running currently because the service closes upon disconnect.
+![img.png](img.png)
+
+It demonstrates how 10 threads run concurrently with the deployed service.
+The class only functions if the AWS server is running.
+![img_1.png](img_1.png)
+
+## Extensibility
+
+The project features an extensible design with a proposed interface so that when implemented in a new class, it can be modified and customized as needed for the service.
 
 
 
