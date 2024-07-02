@@ -73,10 +73,8 @@ mvn javadoc:test-aggregate
 mvn javadoc:test-aggregate-jar
 ```
 
-SE PUEDEN CONEC
 
-Then we start designing the app with the next model:
-![Diagram.png](Resource/Diagram.png)
+
 
 
 
