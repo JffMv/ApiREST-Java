@@ -1,12 +1,12 @@
-# Calculator deploy in AWS
-This is a calculator for multi user.
-[Repository in GitHub here](https://github.com/JffMv/)
+# ApiREST Deploy
+This is a form for multi user.
+[Repository in GitHub here](https://github.com/JffMv/ApiREST-Java)
 
 ## Getting Started
 
 For clone this repository you use this command:
  ```
- git clone https://github.com/JffMv/CalculatorInAWS.git
+ git clone https://github.com/JffMv/ApiREST-Java.git
  ```
 
 ### Prerequisites
@@ -73,13 +73,8 @@ mvn javadoc:test-aggregate
 mvn javadoc:test-aggregate-jar
 ```
 
-if you want see this documentation go to file located
+SE PUEDEN CONEC
 
-
-```
-...\target\apidocs\index.html
-
-```
 Then we start designing the app with the next model:
 ![Diagram.png](Resource/Diagram.png)
 
